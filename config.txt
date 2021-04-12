@@ -1,0 +1,36 @@
+
+case_name = test_case
+
+#Maxwell coefficients
+N_curlB = 8.987552e16
+N_curlE = 1.0
+N_eta = 3.767303e2
+
+#Plasma coefficients
+N_q_s = 1.534699e6,-1.534699e6
+N_E_s = 6.920562e2,-6.920562e2
+N_vxB_s = 9.578835e7,9.578835e7
+N_v_s = 1.384112e5,-1.384112e5
+
+#Mesh parameters
+mesh_path = ../data/periodic-cube.mesh
+mesh_serial_ref = 1
+mesh_para_ref = 1
+#bc_absorbing = -1
+bc_dirichlet = 1,2,3,4,5,6
+
+#Time bounds
+time_ini = 0.0
+time_fin = 10.0
+time_diag = 1.0
+
+#Numerics parameters
+fe_order = 1
+integrator_order = 1
+markers_numbers = 10,20
+
+#Maxwell material parameters
+dipole_pulse = -0.1,0.0,0.0,0.1,0.0,0.0,0.1,5.65e2,0.5e-9,0.5e-9
+#point_charges = 0.5,0.42,0.0,1.0e2, 0.1,-0.3,0.0,-5.0e1
+
+paraview = 1
